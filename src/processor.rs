@@ -50,7 +50,7 @@ impl Processor {
         }
 
         let mut escrow_info = Escrow::unpack_unchecked(&escrow_account.try_borrow_data()?)?;
-        if escrow_info.is_initialized()/ {
+        if escrow_info.is_initialized() {
             return Err(ProgramError::AccountAlreadyInitialized);
         }
 
