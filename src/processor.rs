@@ -11,7 +11,7 @@ use solana_program::{
 
 use spl_token::state::Account as TokenAccount;
 
-use crate::{error::EscrowError, instruction::EscrowInstruction, state::Escrow};
+use crate::{error::EscrowError, instructions::EscrowInstruction, state::Escrow};
 
 pub struct Processor;
 impl Processor {
